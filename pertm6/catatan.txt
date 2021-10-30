@@ -1,0 +1,44 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+class Jam{
+    private:
+        int jam=0, menit=0, detik=0;
+    public:
+    Jam(){
+        jam = 10;
+        menit = 59;
+        detik = 59;
+    }
+    void tambahJam(){
+        jam++;
+    }
+    void tambahMenit(){
+        menit++;
+        if (menit>59){
+            menit =0;
+            jam++;
+        }
+    }
+    void tambahDetik(){
+        detik++;
+        if (detik>59){
+            detik =0;
+            menit++;
+        }
+    }
+    void displayJam(){
+            cout << setw(2) << setfill('0') << jam << ":" << setw(2) << setfill('0') << menit << ":" << setw(2) << setfill('0') << detik << endl;
+    }
+};
+
+int main(){
+    Jam calljam;
+    calljam.displayJam();
+    calljam.tambahJam();
+    calljam.tambahMenit();
+    calljam.tambahDetik();
+    calljam.displayJam();
+    return 0;
+}
