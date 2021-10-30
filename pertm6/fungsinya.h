@@ -61,11 +61,11 @@ void waktu::displayJam()
     }
     day =0; /* mereset hari agar ketika
                 memasukan dan menampilkan data lain tidak terjadi bug
-                karena program ini tidak memakai linked list*/
+                karena hari tidak diinput */
 
-    chekcer = true;/* mereset checker agar ketika
+    chekcer = true;/* mereset chekcer agar ketika
                 memasukan dan menampilkan data lain tidak terjadi bug
-                karena program ini tidak memakai linked list*/
+                karena chekcer tidak diinput */
 }
 
 
