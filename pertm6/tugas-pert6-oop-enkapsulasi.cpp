@@ -17,5 +17,15 @@ int main()
         callWaktu.displayJam();
         cout << endl;
     }
+    cout<<endl;
+    int percobaan;
+    cout<<"Masukan banyaknya percobaan : ";cin>>percobaan;
+    for (int i = 0; i < percobaan; i++)
+    {
+        cout << "------- Pengecekan " << i+1 <<"  -------"<< endl;
+        callWaktu.setWaktu2();
+        callWaktu.displayJam();
+        cout << endl;
+    }
     return 0;
 }

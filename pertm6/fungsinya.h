@@ -15,6 +15,12 @@ void waktu::setWaktu(int j, int m, int d) //set waktu
     detik = d;
 }
 
+void waktu::setWaktu2(){
+    cout<<"Masukan Jam : "; cin>>waktu::jam;
+    cout<<"Masukan Menit : "; cin>>waktu::menit;
+    cout<<"Masukan Detik : "; cin>>waktu::detik;
+}
+
 void waktu::checkNfix()
 { //melakukan pengecekan waktu
     if (jam < 0 || menit < 0 || detik < 0)

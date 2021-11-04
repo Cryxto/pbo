@@ -8,7 +8,9 @@ class waktu{
     public:
     waktu(int jam=0, int menit=0, int detik=0);
     void setWaktu(int j, int m, int d);
+    void setWaktu2();
     void checkNfix();
     void displayJam();
+
 };
 
