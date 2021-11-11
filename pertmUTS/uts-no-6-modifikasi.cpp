@@ -14,21 +14,21 @@ public:
         cout << "Masukan angka 2 : ";
         cin >> b;
     }
-    void tambah()
+    void penambahan()
     {
         cout << "Hasil Penjumlahan : " << a + b << endl;
     }
-    void kurang()
+    void pengurangan()
     {
         cout << "Hasil Pengurangan : " << a - b << endl;
     }
-    void kali()
+    void perkalian()
     {
-        cout << "Hasil Perkalian : " << a * b << endl;
+        cout << "Hasil Perperkalianan : " << a * b << endl;
     }
-    void bagi()
+    void pembagian()
     {
-        cout << "Hasil Pembagian : " << a / b << endl;
+        cout << "Hasil Pempembagianan : " << a / b << endl;
     }
 };
 int main()
@@ -43,10 +43,10 @@ int main()
         cout << endl;
         cout << "MENU PROGRAM MATEMATIKA SEDERHANA \n"
              << "0. Keluar\n"
-             << "1. Tambah\n"
-             << "2. Kurang\n"
-             << "3. Kali\n"
-             << "4. Bagi\n";
+             << "1. penambahan\n"
+             << "2. pengurangan\n"
+             << "3. perkalian\n"
+             << "4. pembagian\n";
         cout << "PILIH : ";
         cin >> menu;
         while (menu > 4 || menu < 0)
@@ -62,19 +62,19 @@ int main()
             break;
         case 1:
             hitung.setAngka();
-            hitung.tambah();
+            hitung.penambahan();
             break;
         case 2:
             hitung.setAngka();
-            hitung.kurang();
+            hitung.pengurangan();
             break;
         case 3:
             hitung.setAngka();
-            hitung.kali();
+            hitung.perkalian();
             break;
         case 4:
             hitung.setAngka();
-            hitung.bagi();
+            hitung.pembagian();
             break;
         default:
             cout << "Menu tidak ada! Silahkan pilih menu yang ada!" << endl;
