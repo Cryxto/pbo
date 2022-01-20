@@ -17,9 +17,10 @@ private:
     const char *pass = "";
     const char *dbname = "uas_yohanes_bagas_pbo";
     unsigned int port = 3306;
-    const char *unixsocket = NULL;
+    const char *unixsocket = NULL; 
     unsigned long clientflag = 0;
-    string current_db;
+    string current_db;       
+    
 
 public:
     MYSQL *connectdb()
